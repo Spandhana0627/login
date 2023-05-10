@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+   <center>
+    <form class="from-container">
+        <h3>LOGIN FORM</h3>
+        <div class="username">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname"  required="required" id="spandhu">
+        </div>
+        <div class="password">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required="required" id="sp@ndhu">
+        </div>
+        <div class="openBtn">
+            <button id="sign-login" onclick="Login()">Login</button>
+        </div>
+    </form>
+    </center>
+  
+   <div class="popup" id="popupForm">
+       <div class="close-btn" onclick="closeForm()">&times;</div>
+       <h1>STUDENT DETAILS</h1>
+       <form action=result.html method="get">
+           <div class="form-element">
+                <label for="first name">
+                    <strong>First Name</strong>
+                </label>
+                <input type="text" id="name" name="name" value="spandhana">
+            </div>
+            <div class="form-element">
+                <label for="last name">
+                    <strong>Last Name</strong>
+                </label>
+                <input type="text" id="surname" name="surname" value="Narne">
+            </div>    
+            <div class="form-element">
+                <label>
+                    <strong>Mobile</strong>
+                </label>
+                <input type="text" maxlength="10" id="number" name="number" value="6304762099">
+            </div>   
+            <div class="form-element">
+                <label for="email">
+                    <strong>Email</strong>
+                </label>
+                <input type="email" id="email" name="email" value="spandhunarne333@gmail.com">
+            </div>    
+            <div class="form-element">
+                <button type="submit" value="submit" onclick="handleSubmit()">Submit</button>
+                <button type="edit" id="edit" value="edit" onclick="handleEdit()">edit</button>
+            </div>    
+    
+        </div>
+    </form>   
+
+<script type="text/javascript" src="login.js"></script>
+</body>
+</html>
+    
+ 
